@@ -8,6 +8,8 @@ targetType "staticLibrary"
 targetPath "lib"
 targetName "BindBC_Assimp"
 
+toolchainRequirements frontend=">=2.086.1"
+
 configuration "dynamic" {
     dependency "bindbc-loader" version="~>0.2.1"
 }
