@@ -10,13 +10,13 @@ To use Assimp, add `bindbc-assimp` as a dependency to your project's package con
 __dub.json__
 ```
 dependencies {
-    "bindbc-assimp": "~>0.1.0",
+    "bindbc-assimp": "~>0.0.1",
 }
 ```
 
 __dub.sdl__
 ```
-dependency "bindbc-assimp" version="~>0.1.0"
+dependency "bindbc-assimp" version="~>0.0.1"
 ```
 
 ### The dynamic binding
@@ -82,7 +82,7 @@ When using DUB, its `versions` directive is an option. For example, when using t
 __dub.json__
 ```
 "dependencies": {
-    "bindbc-assimp": "~>0.1.0"
+    "bindbc-assimp": "~>0.0.1"
 },
 "versions": ["BindAssimp_Static"],
 "libs": ["assimp"]
@@ -90,7 +90,7 @@ __dub.json__
 
 __dub.sdl__
 ```
-dependency "bindbc-assimp" version="~>0.1.0"
+dependency "bindbc-assimp" version="~>0.0.1"
 versions "BindAssimp_Static"
 libs "assimp"
 ```
@@ -101,7 +101,7 @@ Instead of using DUB's `versions` directive, a `subConfiguration` can be used. E
 __dub.json__
 ```
 "dependencies": {
-    "bindbc-assimp": "~>0.1.0"
+    "bindbc-assimp": "~>0.0.1"
 },
 "subConfigurations": {
     "bindbc-assimp": "static"
@@ -111,7 +111,7 @@ __dub.json__
 
 __dub.sdl__
 ```
-dependency "bindbc-assimp" version="~>0.1.0"
+dependency "bindbc-assimp" version="~>0.0.1"
 subConfiguration "bindbc-assimp" "static"
 libs "assimp"
 ```
@@ -125,7 +125,7 @@ This has the benefit that it completely excludes from the build any source modul
 __dub.json__
 ```
 "dependencies": {
-    "bindbc-assimp": "~>0.1.0"
+    "bindbc-assimp": "~>0.0.1"
 },
 "subConfigurations": {
     "bindbc-assimp": "staticBC"
@@ -135,7 +135,7 @@ __dub.json__
 
 __dub.sdl__
 ```
-dependency "bindbc-assimp" version="~>0.1.0"
+dependency "bindbc-assimp" version="~>0.0.1"
 subConfiguration "bindbc-assimp" "staticBC"
 libs "assimp"
 ```
