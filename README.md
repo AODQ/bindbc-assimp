@@ -43,7 +43,7 @@ AssimpSupport ret = loadAssimp();
 if(ret == AssimpSupport.noLibrary) {
 // Assimp shared library failed to load
 }
-else if(AssimpSupport.badLibrary) {
+else if(ret == AssimpSupport.badLibrary) {
 // One or more symbols failed to load. The likely cause is that the
 // shared library is for a lower version than bindbc-assimp was configured
 // to load.
